@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>XX社招新网页</title>
+<!--
+  使用方法（必看）：
+  1. 本文件按作业要求命名为「姓的拼音-学号后四位-work2.html」，当前为占位名 xing-0000-work2.html，
+     请重命名为你自己的名字，例如 zhang-0123-work2.html。
+  2. 主题占位符：全文统一用「XX社」代表你的社团名、「XX乐器」代表对应乐器，用编辑器全局替换即可。
+     学号末位对应社团：0钢琴 1打击乐 2小提琴 3古筝 4萨克斯 5长笛 6尤克里里 7口琴 8贝斯 9大提琴。
+  3. 素材文件：把你自己生成/下载的文件放到本文件同目录，并保持以下文件名：
+     - 背景音乐：music.mp3   （海绵音乐生成，见作业步骤1）
+     - 社团照片：club.jpg    （文心一言 image studio 生成，见作业步骤4）
+     - 宣传视频：movie.mp4   （剪映将图片转视频导出，见作业步骤5）
+  4. club_intro.html 中的返回链接指向本文件名，若重命名了本文件，请同步修改 club_intro.html 里的 href。
+-->
+</head>
+<body bgcolor="#fffbe6">
+
+<a name="main"></a>
+
+<!-- 左上角点击播放背景音乐（作业要求1） -->
+<div style="position:fixed; top:0; left:0; z-index:10; background:#333; color:#fff; padding:6px 10px;">
+  <a href="javascript:void(0)" onclick="playMusic()" style="color:#ffd700; text-decoration:none;">
+    ▶ 点击播放背景音乐
+  </a>
+</div>
+<audio id="bgm" src="music.mp3" controls="controls" loop="loop"></audio>
+
+<h1 align="center"><b>校园XX社 2026 年招新</b></h1>
+<p align="center">
+  <a href="#intro">社团简介</a>&nbsp;|&nbsp;
+  <a href="#activities">活动安排</a>&nbsp;|&nbsp;
+  <a href="#show">风采展示</a>&nbsp;|&nbsp;
+  <a href="#stories">社员故事</a>&nbsp;|&nbsp;
+  <a href="#signup">在线报名</a>
+</p>
+<hr>
+
+<!-- 一、社团简介 -->
+<a name="intro"></a>
+<h2>一、XX社简介</h2>
+<p>
+  XX社成立于校园文艺社团发展最蓬勃的时期，是学校最具活力的学生音乐社团之一。社团以XX乐器为主要载体，
+  面向全校所有热爱音乐的同学开放，无论你是否接触过这种乐器，只要怀着一颗喜欢音乐的心，都欢迎加入我们。
+  社团日常以练琴、合奏、弹唱和舞台演出为主要形式，为每一位成员提供从入门到登台的完整成长路径。
+</p>
+<p>
+  在这里，零基础的同学完全不必担心。社团为新手量身安排了系统的入门课程，从最基础的持琴姿势、指法练习、
+  到音阶、和弦、节奏感的培养，都有经验丰富的学长学姐一对一帮带。老社员会耐心地陪你走完从“只会按弦”
+  到“能完整演奏一首歌”的每一步，让音乐学习不再是一道让人却步的门槛，而是一段充满成就感的旅程。
+</p>
+<p>
+  已经有一定基础的同学同样能在社团中找到属于自己的舞台。我们每周固定组织合奏排练，不定期举办小型专场、
+  草地弹唱会、校园音乐节等活动。在一次次排练与演出的打磨中，你的演奏技巧、舞台表现力和与人协作的能力
+  都会得到实实在在的提升。社团还鼓励成员参与活动策划与舞台幕后工作，无论台前还是幕后，都能收获成长。
+</p>
+<p>
+  社团的练习场地主要分布在学生活动中心的音乐教室，环境安静、设备齐全，为日常练琴提供了良好的条件。
+  除了固定的练习时间，我们也经常利用课余时间组织即兴合奏、经验分享、曲目推荐等轻松的小活动，
+  让音乐真正融进大家的日常生活。这里不仅是学习乐器的地方，更是一个可以畅谈音乐、分享快乐、结交挚友的家。
+</p>
+<p>
+  我们相信，音乐属于每一个人。不需要你已经多么熟练，只需要你对音乐、对生活保有热情。
+  加入XX社，你收获的将不只是一门乐器，还有一群志同道合的朋友，一段闪闪发光的大学生活，
+  以及无数次在琴弦上演奏青春、在舞台上绽放自己的机会。期待你的到来，一起把旋律奏响在校园的每一个角落。
+</p>
+<div><a href="#main">返回顶部</a></div>
+<hr>
+
+<!-- 二、本学期主要活动安排 -->
+<a name="activities"></a>
+<h2>二、本学期主要活动安排</h2>
+<p>
+  为了让新老成员都能尽快融入社团、感受音乐的魅力，本学期我们围绕入门教学、集体合奏和舞台演出三条主线，
+  规划了一系列丰富而连贯的活动。既有面向新手的零基础公开课，也有面向全体成员的合奏排练和专场演出，
+  力求让每一位社员在学期里都有练习、有展示、有收获。以下为本学期春季学期的代表性活动安排表，
+  具体时间可能根据学校统一安排略有调整，请以社团群内最新通知为准。
+</p>
+<table border="1" align="center">
+  <tr>
+    <td colspan="4" align="center"><b>XX社 2026 年春季学期活动安排表</b></td>
+  </tr>
+  <tr align="center">
+    <th>活动时间</th>
+    <th>活动名称</th>
+    <th>活动地点</th>
+    <th>负责人</th>
+  </tr>
+  <tr>
+    <td align="center">3 月第 2 周 周五晚</td>
+    <td>新成员见面会</td>
+    <td rowspan="2">学生活动中心 音乐教室 201</td>
+    <td align="center">张强</td>
+  </tr>
+  <tr>
+    <td align="center">3 月第 3 周 周六下午</td>
+    <td>XX乐器基础教学公开课</td>
+    <td align="center">李娜</td>
+  </tr>
+  <tr>
+    <td align="center">4 月第 2 周 周日</td>
+    <td>校园草地弹唱会</td>
+    <td>操场东侧草坪</td>
+    <td align="center">王浩</td>
+  </tr>
+  <tr>
+    <td align="center">5 月第 1 周 周六晚</td>
+    <td>社团合奏排练开放日</td>
+    <td>学生活动中心 音乐教室 201</td>
+    <td align="center">陈晨</td>
+  </tr>
+  <tr>
+    <td align="center">6 月第 1 周 周六晚</td>
+    <td>期末专场音乐会</td>
+    <td>大学生活动中心 大礼堂</td>
+    <td align="center">刘芳</td>
+  </tr>
+</table>
+<p>
+  <b>说明：</b>上表中的「新成员见面会」与「XX乐器基础教学公开课」都安排在学生活动中心音乐教室 201 举行，
+  两场活动在同一间教室，方便新同学一次参加、快速熟悉社团环境和活动流程。除上表列出的代表性活动外，
+  社团日常还会穿插即兴合奏、经验分享会、优秀曲目推荐、期末成果展演等小型活动，
+  欢迎每一位成员积极参与活动策划，把更多有趣的点子变成现实。
+</p>
+<div><a href="#main">返回顶部</a></div>
+<hr>
+
+<!-- 三、风采展示（可点击图片跳转 + 视频） -->
+<a name="show"></a>
+<h2>三、XX社风采展示</h2>
+<p>
+  一张张照片记录着社团一路走来的精彩瞬间：迎新季里的第一次合奏、草坪音乐节上的即兴弹唱、
+  期末专场音乐会上的集体亮相、以及日常排练室里专注练习的每一个身影。这些画面，既是社团活力的见证，
+  也是每一位社员共同努力的成果。点击下面的活动照片，可以跳转到更详细的活动介绍页面。
+</p>
+<a href="club_intro.html">
+  <img src="club.jpg" alt="XX社日常演奏照片" width="420" height="280">
+</a>
+<p>
+  图中为上学期“夏日之声”校园音乐会上XX社成员的集体演出场景。平时的每一次认真排练，
+  最终都会在正式演出的舞台上得到充分的展示。除了静态的照片，我们还为社团制作了宣传短片，
+  下面这段视频由社员日常演奏与排练画面剪辑而成，希望能让大家更直观地感受社团的氛围与魅力。
+</p>
+<h3>宣传视频示例</h3>
+<embed src="movie.mp4" width="480" height="360" loop="true" />
+<div><a href="#main">返回顶部</a></div>
+<hr>
+
+<!-- 四、社员故事（节选） -->
+<a name="stories"></a>
+<h2>四、社员故事（节选）</h2>
+
+<h3>1. 从零基础到第一次登台</h3>
+<p>
+  小李大一刚加入XX社的时候，连XX乐器最基本的持琴姿势都不会，更别提看懂谱子、按准和弦了。
+  看着身边同学弹奏出流畅的旋律，他心里既羡慕又有些打鼓。社团的学长没有催他，而是从最基础的握琴、
+  拨弦、刷节奏开始，一点一点地带他入门。每天晚自习后，小李都会准时出现在音乐教室里，
+  抱着琴一遍遍练习。手指磨出了茧子，节奏从生涩到渐渐流畅，他慢慢找到了感觉。
+  一个学期之后，他已经能够完整地弹唱好几首自己喜欢的流行歌曲，并在期末专场音乐会上，
+  第一次站上舞台，在台下同学的注视中完成了属于自己的首场演出。走下台的那一刻，
+  他说自己整个人都在发抖，但心里满满的都是成就感。
+</p>
+
+<h3>2. 在音乐里找到自信</h3>
+<p>
+  小王是个性格内向的同学，以前最怕在别人面前开口说话，更别说当众表演了。加入XX社之后，
+  大家一起排练、一起讨论音乐，那些轻松愉快的气氛让他慢慢放下了紧张。社团鼓励每个人在合奏中
+  承担自己的一份，哪怕只是跟上一个简单的节奏，也能得到大家的肯定。一次小型的社团汇报演出前，
+  小王鼓起勇气报了名。排练时他反复练习，社员们陪他一起抠细节、加油鼓劲。演出那天，
+  他唱完了自己准备的那首歌，台下响起了热烈的掌声。从那以后，小王变得开朗了许多，
+  他说是音乐和社员们让他第一次体会到，勇敢表达自己其实没有那么可怕。
+</p>
+
+<h3>3. 因音乐结识一群朋友</h3>
+<p>
+  很多社员都说，加入XX社最大的收获，除了学会一门乐器，更重要的是认识了一群志同道合的朋友。
+  大家会一起研究喜欢的曲目，互相推荐歌手和乐队，练琴累了就围坐在一起聊天，分享各自的喜怒哀乐。
+  期末考试周，社员们会互相督促、一起自习；遇到开心的事，也会第一时间到社团群里分享。
+  对许多人来说，音乐教室已经不只是练习的地方，更像是一个温暖的“第二个家”。
+  在这里结识的朋友，很多都成了大学四年里最亲近的伙伴。如果你也向往这样的生活，
+  欢迎加入我们，一起在琴弦上奏响属于青春的歌。
+</p>
+
+<p>
+  如果你也喜欢音乐，想在忙碌的学业之外拥有一段与XX乐器相关的美好回忆，欢迎扫描我们的招新海报，
+  加入XX社，让我们一起用旋律记录青春、用琴声连接彼此。你不需要有任何基础，
+  只需要带着对音乐的热情来，剩下的，交给我们。
+</p>
+<div><a href="#main">返回顶部</a></div>
+<hr>
+
+<!-- 五、XX社在线报名表 -->
+<a name="signup"></a>
+<h2>五、XX社在线报名表</h2>
+<p>
+  欢迎有意加入XX社的同学填写以下报名信息。请如实填写，提交后我们会尽快与你联系，
+  并邀请你参加社团的新成员见面会。填写过程中如对各项内容有疑问，可在自我介绍一栏中说明，
+  或加入社团招新群咨询。
+</p>
+<form action="/cgi-bin/post-information" method="post">
+  <table border="1">
+    <tr>
+      <td>姓名</td>
+      <td><input type="text" name="xm" size="12"></td>
+    </tr>
+    <tr>
+      <td>性别</td>
+      <td>
+        <input type="radio" name="xb" value="男" checked>男
+        <input type="radio" name="xb" value="女">女
+      </td>
+    </tr>
+    <tr>
+      <td>出生日期</td>
+      <td>
+        <input type="text" name="year" size="4">年
+        <input type="text" name="month" size="2">月
+        <input type="text" name="day" size="2">日
+      </td>
+    </tr>
+    <tr>
+      <td>手机</td>
+      <td><input type="text" name="phone" size="12"></td>
+    </tr>
+    <tr>
+      <td>邮箱</td>
+      <td><input type="text" name="email" size="20"></td>
+    </tr>
+    <tr>
+      <td>是否有XX乐器基础</td>
+      <td>
+        <input type="radio" name="base" value="有" checked>有
+        <input type="radio" name="base" value="无">无
+      </td>
+    </tr>
+    <tr>
+      <td>兴趣方向</td>
+      <td>
+        <input type="checkbox" name="interest" value="独奏">独奏
+        <input type="checkbox" name="interest" value="合奏">合奏
+        <input type="checkbox" name="interest" value="弹唱">弹唱
+        <input type="checkbox" name="interest" value="创作">创作
+        <input type="checkbox" name="interest" value="活动策划">活动策划
+        <input type="checkbox" name="interest" value="幕后制作">幕后制作
+      </td>
+    </tr>
+    <tr>
+      <td>年级</td>
+      <td>
+        <select name="grade" size="1">
+          <option value="大一" selected>大一</option>
+          <option value="大二">大二</option>
+          <option value="大三">大三</option>
+          <option value="大四">大四</option>
+          <option value="研究生">研究生</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>自我介绍</td>
+      <td>
+        <textarea name="comment" rows="5" cols="60">请简单介绍自己、以及加入XX社的理由……</textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>是否服从活动安排</td>
+      <td>
+        <input type="radio" name="obey" value="服从" checked>服从
+        <input type="radio" name="obey" value="不服从">不服从
+      </td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2">
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+      </td>
+    </tr>
+  </table>
+</form>
+<div><a href="#main">返回顶部</a></div>
+
+<script>
+function playMusic() {
+  var a = document.getElementById('bgm');
+  if (a.paused) { a.play(); } else { a.pause(); }
+}
+</script>
+
+</body>
+</html>
